@@ -37,6 +37,18 @@ header{
 }
 
 nav{
-  background-color:blue;
+  height: 100%;
+}
+
+main{
+  display:flex;
   flex-direction: row;
+}
+
+footer{
+  background-color:purple;
+}
+
+#map {
+  height: 100%;
 }
