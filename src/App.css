@@ -50,4 +50,7 @@ footer{
 }
 
 
-#mapid { height: 180px; }
+#mapid {
+   height: 180px;
+   display: block;
+   }
