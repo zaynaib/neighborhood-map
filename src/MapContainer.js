@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom'
 import Map from './Map'
 
 import {GoogleApiWrapper} from 'google-maps-react'
+//map data
 
 export class MapContainer extends Component {
   render() {
@@ -15,9 +15,13 @@ export class MapContainer extends Component {
       return <div>Loading...</div>
     }
     return (
-      <div style={style}>
+      <div >
         {/*Map component*/}
-        <Map google={this.props.google}/>
+        <Map style={style} google={this.props.google}
+        //loop through and makemarkers
+        
+       
+        />
       </div>
     )
   }
