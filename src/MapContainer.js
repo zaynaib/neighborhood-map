@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 //import Map from './Map'
 
 import {GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react'
-//map data
+import Map from './Map'
 
 export class MapContainer extends Component {
   render() {
@@ -19,12 +19,12 @@ export class MapContainer extends Component {
         {/*Map component*/}
         <Map style={style} google={this.props.google}
           initialCenter = {{ lat: 39.648209, lng: -75.711185 }}
-          <Marker
-    title={'The marker`s title will appear as a tooltip.'}
-    name={'SOMA'}
-    position={{lat: 37.778519, lng: -122.405640}} />
 
         //loop through and makemarkers
+        <Marker
+        title={'The marker`s title will appear as a tooltip.'}
+        name={'SOMA'}
+        position={{lat: 37.778519, lng: -122.405640}} />
         />
 
        
