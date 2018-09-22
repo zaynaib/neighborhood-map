@@ -55,9 +55,9 @@ class Map extends Component {
             height:'100vh',
             position:'static'
           }
-          console.log(this.props.google)
-          console.log(this.props.initialCenter)
-          console.log(this.props)
+          //console.log(this.props.google)
+          //console.log(this.props.initialCenter)
+          //console.log(this.props)
 
       return (
         <div style={style} ref='map'>

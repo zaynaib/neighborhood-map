@@ -8,6 +8,7 @@ import Marker from './Marker';
 export class MapContainer extends Component {
   render() {
     //important so the map will not collapse to zero
+    console.log(this.props)
     const style ={
       width:'100wh',
       height:'100%'
@@ -21,7 +22,8 @@ export class MapContainer extends Component {
         <Map style={style} google={this.props.google}
           //initialCenter = {{ lat: 39.648209, lng: -75.711185 }}
         />
-        <Marker lat={this.lat} lng={this.lng} />
+        <Marker maps={this.props.google} lat={39.648209} lng ={-75.711185 }/>
+        {/*<Marker lat={this.lat} lng={this.lng} />*/}
       <Map/>
        
       </div>
