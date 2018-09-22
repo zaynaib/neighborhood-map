@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Marker} from 'react-google-maps'
 import Map from './Map'
-import GoogleApiComponent from 'google-maps-react/dist/GoogleApiComponent';
+import {GoogleApiWrapper} from 'google-maps-react';
+
 
 /*
 var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
@@ -21,16 +21,22 @@ marker.setMap(map);
 });
 */
 
-export class Marker extends Component {
+class Marker extends Component {
     render() {
-        let markerLat = this.props.lat
-        let markerLng = this.props.lng 
-        let myLatLng = new google.maps.LatLng(markerLat,markerLng);
-        let marker = new google.maps.Marker({
-          position: myLatlng,
-          title:"Hello World!"
-      });
-      console.log(marker.title)
+        //google=this.props.google
+        
+        let myLatlng = new this.google.maps.LatLng(this.props.lat,this.props.lng);
+        let marker = new this.google.maps.Marker({
+            position: myLatlng,
+            title:"Hello World!"
+        });
+      console.log(marker)
+      
+      return(
+          <div></div>
+      )
   }
   // ...
 }
+
+export default Marker;
