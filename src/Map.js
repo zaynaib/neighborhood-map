@@ -16,8 +16,8 @@ class Map extends Component {
     
     state ={
         initialCenter:{
-            lat: 37.774929,
-            lng:-122.419416
+            lat:39.648209,
+            lng:-75.711185 
         }
     }    
     componentDidMount() {
@@ -57,6 +57,7 @@ class Map extends Component {
           }
           console.log(this.props.google)
           console.log(this.props.initialCenter)
+          console.log(this.props)
 
       return (
         <div style={style} ref='map'>
