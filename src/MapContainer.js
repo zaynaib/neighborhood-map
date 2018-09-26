@@ -22,8 +22,6 @@ export class MapContainer extends Component {
         <Map style={style} google={this.props.google}
           //initialCenter = {{ lat: 39.648209, lng: -75.711185 }}
         />
-        <Marker maps={this.props.google} lat={39.648209} lng ={-75.711185 }/>
-        {/*<Marker lat={this.lat} lng={this.lng} />*/}
       <Map/>
        
       </div>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import Marker from './Marker';
 
 //https://www.npmjs.com/package/google-maps-react#marker
 //https://www.fullstackreact.com/articles/how-to-write-a-google-maps-react-component/
@@ -11,7 +12,12 @@ To Do Make InfoWindow Componenet
 
 */
 
+/*
+        <Marker maps={this.props.google} lat={39.648209} lng ={-75.711185 }/>
 
+
+
+*/
 class Map extends Component {
     
     state ={

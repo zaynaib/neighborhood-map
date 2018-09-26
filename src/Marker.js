@@ -22,24 +22,18 @@ marker.setMap(map);
 */
 
 class Marker extends Component {
-    render() {
-        //google=this.props.google
-        let maps =this.props.maps
-        console.log(this.props.lat)
-        console.log(this.props.lng)
-        
-        
-        let myLatlng = new maps.LatLng(this.props.lat,this.props.lng);
-       let marker = new maps.Marker({
-           position: myLatlng,
-            title:"Hello World!"
-        });
-      console.log(marker)
-      
-      return(
-          <div></div>
-      )
-  }
+    renderMarker() {
+        let {map, google, position, mapCenter} = this.props;
+        return(this.props)
+  
+    }
+
+    render(){
+        console.log(this.renderMarker)
+        return(
+            <div></div>
+        )
+    }
   // ...
 }
 
